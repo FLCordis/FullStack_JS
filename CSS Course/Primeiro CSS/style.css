@@ -1,0 +1,35 @@
+h1{
+    font-size: 70px;
+}
+li{
+    color: brown;
+    font-size: 30px;
+}
+
+body{
+    background-image:url(https://apod.nasa.gov/apod/image/2209/potw1805a_ngc7331.jpg);
+    background-size: cover;
+    background-repeat: no-repeats;
+}
+
+div{
+    border: 2px solid;
+}
+
+div li{
+    border: 3px dashed;
+}
+
+.green-chart{
+    color: chartreuse;
+}
+
+.moon-title{
+    font-size: 40px;
+    color: rgb(195, 255, 255);
+}
+
+#tebe-style{
+    font-size: 25px;
+    color:honeydew;
+}

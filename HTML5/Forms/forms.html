@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Encontre sua pesquisa no Google</h2>
+    <form action="https://www.google.com/search"></form>
+        <label for="q">Oque deseja saber?</label>
+        <input type="text" name="q" id="q" placeholder="Elon Musk, Crypto" required>
+        <input type="submit" value="Pesquisar">
+
+    <br><br><br>
+    <h4>Qual navegador você usa?</h4>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Google Chrome"></option>
+        <option value="Mozilla Firefox"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+        <option value="IE"></option>
+    </datalist>
+
+    <h5>Input tipo texto:</h5>
+    <input type="text" name="firstname">    <br>
+    <h5>Input senha:</h5>
+    <input type="password" name="psw">
+    <h5>Input seleção 'Radio':</h5>
+    <form action="https://www.example.com">
+        <input type="radio" name="gender" value="male"> Male <br>
+        <input type="radio" name="gender" value="female"> Female <br>
+        <input type="radio" name="gender" value="other"> Other
+    </form>
+
+    <h2>Entre outros: <a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">aqui</a>.</h2>
+</body>
+</html>
