@@ -1,0 +1,22 @@
+.btn{
+    width: 125px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+
+    &.btn-roxo{                     //Precisa de Classe Pai e Filho para funcionar.
+        background-color: purple;
+        color: white;
+    }
+
+    &#btn-yellow{                   //Ou classe e ID.
+        background-color: yellow;
+    }
+}
+
+.btn-blue{                          //Só existe a classe do botão azul.
+    @extend .btn;
+    background-color: blue;
+    color: white;
+}
