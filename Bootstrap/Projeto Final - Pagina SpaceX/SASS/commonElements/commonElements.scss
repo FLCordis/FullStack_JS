@@ -1,0 +1,118 @@
+.header{
+    font-size: 22px;
+    font-weight: 500;
+
+    #headerItem{
+
+        &:hover{
+            color: $link-hover;
+        }
+        &:after{
+        display:block;
+        content: '';
+        border-bottom: solid 2px $link-hover;  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;;
+        }
+        &:hover:after { transform: scaleX(1); 
+        }
+    }
+}
+
+.container00{
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.arrowDown{
+    display: inline-block;
+    width: 90px;
+    margin-top: 5px;
+}
+
+.logoPc{
+    width: 150px;
+    margin-left: -10px;
+    margin-right: 70px;
+}
+
+
+#button{
+    padding: $padding-button;
+    border: 2px solid white;
+}
+
+.downloadDesc{
+    background-color: black;
+    height: 85vh;
+    padding-top: 250px;
+
+    button{
+        border: 2px solid white;
+        margin-right: 10px;
+    }
+}
+
+.emailFC{
+    text-decoration: none;
+    color: white;
+    color: $copyright-color;
+
+    &:hover{
+        border-bottom: 1px solid white;
+        color: $link-hover;
+    }
+}
+
+.footer{
+    background-color: black;
+    height: 15vh;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a{
+        text-decoration: none;
+        color: white;
+        
+        &:hover{
+            color: $link-hover;
+        }
+    }
+
+    .copyrightFC{
+        color: $copyright-color;
+    }
+}
+
+//Media Query (Responsividade Mobile & Outros)
+
+@media (max-width: 405px){
+    .logoPc{
+        width: 180px;
+        margin-top: 15px;
+    }
+
+    .footer{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 449px){
+    .downloadDesc{
+        button{
+            margin: 10px 0px;
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .logoPc{
+        width: 150px;
+        margin-top: 15px;
+    }
+}

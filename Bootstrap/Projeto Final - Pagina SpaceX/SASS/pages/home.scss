@@ -1,0 +1,56 @@
+.container00{
+    &.container01{
+        background-image: url(../img/home/dragoncrew.png);
+    }
+    &.container02{
+        background-image: url(../img/home/03.jpg);
+    }
+    &.container03{
+        background-image: url(../img/home/02.gif);
+    }
+    &.container04{
+        background-image: url(../img/home/04.jpg);
+    }
+}
+
+.container01{
+    .titlePadding{
+        img{
+            padding-top: 270px;
+        }
+    }
+}
+
+.titlePadding{
+    padding-top: 300px;
+}
+
+.shortTitle{
+    width: 550px;
+    margin-bottom: 25px;
+}
+
+.mediumTitle{
+    width: 650px;
+    margin-bottom: -25px;
+}
+
+//Media Query só do Home
+
+@media(max-width: 750px){
+    .titlePadding{
+        padding-top: 120px;
+    }
+
+    .shortTitle, .mediumTitle{
+        width: auto;
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 380px) {
+    .shortTitle, .mediumTitle{
+        width: auto;
+        font-size: 30px;
+    }
+}
