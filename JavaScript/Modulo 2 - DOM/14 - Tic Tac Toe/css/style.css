@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Unbounded', cursive;
+    background-color: var(--bg-primary);
+  }
+
+:root{
+    --bg-primary: #301E67;
+    --bg-secondary: #234af9;
+    --font-color: #03001C;
+    --font-secondary: #ffffff;
+    --board-bg: #262728;
+    --tile-color: #ddd;
+}
+
+body{
+    overflow: hidden;
+}
+
+.background{
+    color: var(--font-color);
+    height: 100vh;
+    padding-top: 5px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: var(--font-secondary);
+    text-align: center;
+    font-size: 46px;
+}
+
+#tictacimg{
+    width: 100px;
+    margin-right: 25px;
+}
+
+.players{
+    color: var(--font-secondary);
+    text-align: center;
+    font-size: 24px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#player1{
+    margin: 30px 250px 25px 5px;
+    font-size: 24px;
+    width: 250px;
+    background-color: var(--font-secondary);
+}
+
+#player2{
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 24px;
+    width: 250px;
+    background-color: var(--font-secondary);
+}
+
+.startSection{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+h2{
+    text-align: center;
+    color: var(--font-secondary);
+    margin-bottom: 30px;
+}
+
+#gameBoard{
+    margin: 0 auto;
+    background-color: var(--board-bg);
+    border: 4px solid var(--board-bg);
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    max-width: 19rem;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    /*column-gap: 10px;
+    row-gap: 10px;*/
+}
+
+#gameBoard span {
+    background-color: var(--tile-color);
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+}
+
+#gameBoard span.win{
+    background-color: #25a340;
+}
+
+.playerX{
+    color: red;
+}
+
+.playerO{
+    color: yellow;
+}
+
+#startBtn{
+    font-size: 40px;
+    border: 2px solid #03001C;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #373c42;
+    color: var(--font-secondary);
+    padding: 5px 15px;
+}
+
+#restartBtn{
+    font-size: 36px;
+    border: 2px solid #03001C;
+    width: 250px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var(--bg-secondary);
+    color: var(--font-secondary);
+    padding: 5px 15px;
+}
+
+footer{
+    text-align: center;
+    color: var(--font-secondary);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    margin: 0px auto;
+    text-decoration: underline;
+    color: white;
+}
+
+footer a:hover{
+    color: #f71d1d;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    .title{
+        font-size: 28px;
+        margin-top: 1px;
+    }
+    .players{
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #player1{
+        margin: 30px 150px 25px 5px;
+        font-size: 20px;
+        width: 200px;
+    }
+    
+    #player2{
+        font-size: 20px;
+        width: 200px;
+    }
+
+    #label1, #label2{
+        font-size: 22px;
+    }
+
+    #gameBoard{
+        margin: 0 auto;
+        grid-template-columns: 6rem 6rem 6rem;
+        grid-template-rows: 5rem 5rem 5rem;
+        max-width: 19rem;
+        gap: .5rem;
+        margin-bottom: 0px;
+    }
+    
+    #gameBoard span {
+        font-size: 4rem;
+    }
+
+    #startBtn{
+        font-size: 26px;
+        border: 1px solid #03001C;
+        border-radius: 15px;
+    }
+    
+    #restartBtn{
+        font-size: 26px;
+        border: 1px solid #03001C;
+        width: 150px;
+        border-radius: 15px;
+    }
+    h2{
+        margin-top: 0px;
+        margin-bottom: 2%;
+    }
+    .startSection{
+        margin-top: 5px;
+    }
+    footer{
+        margin-left: 5px;
+        text-align: left;
+        font-size: 12px;
+    }
+
+  }
+
+  @media screen and (max-device-width: 640px) {
+    .title{
+        font-size: 18px;
+        margin-top: 1%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: 2rem 2rem;
+        grid-template-rows: 2rem 2rem;
+        place-content: start;
+        flex-wrap: wrap;
+        font-size: 14px;
+        margin-top: 15%;
+        margin-bottom: 7%;
+    }
+    #player1{
+        margin: 0 auto;
+        font-size: 14px;
+        width: 150px;
+    }
+    
+    #player2{
+        margin: 0 auto;
+        font-size: 14px;
+        width: 150px;
+    }
+
+    #label1, #label2{
+        font-size: 18px;
+    }
+
+    #gameBoard{
+        grid-template-columns: 4rem 4rem 4rem;
+        grid-template-rows: 4rem 4rem 4rem;
+        max-width: 13rem;
+        gap: .5rem;
+        margin-bottom: 1rem;
+    }
+    h2{
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    .startSection{
+        margin-top: 40%;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
