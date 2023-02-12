@@ -1,0 +1,17 @@
+{
+  "name": "16---npm-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "meuScript": "echo testando os scripts!",
+    "npxScript": "npx hello-world-npm",
+    "npxScript2": "hello-world-npm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hello-world-npm": "^1.1.1"
+  }
+}

@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #303a3d;
+    color: #fafafa;
+    display: grid;
+    font-family: sans-serif;
+    min-height: 100vh;
+    place-content: center;
+}
+
+h1 {
+    border: 1px solid black;
+}
+
+.container {
+    text-align: center;
+    padding: .75rem 0;
+}
